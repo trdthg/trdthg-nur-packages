@@ -1,7 +1,7 @@
 { stdenv }:
 
 stdenv.mkDerivation rec {
-  name = "example-package-${version}";
+  name = "example-package-1-${version}";
   version = "1.0";
   src = ./.;
   buildPhase = "echo echo Hello World > example";

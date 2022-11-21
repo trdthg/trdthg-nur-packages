@@ -7,7 +7,7 @@
 
 stdenv.mkDerivation rec {
   # 指定包名和版本
-  pname = "liboqs";
+  pname = "example-package-2";
   version = "0.7.1";
 
   # 从 GitHub 下载源代码
