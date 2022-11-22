@@ -16,6 +16,7 @@
 
   example-package-1 = pkgs.callPackage ./pkgs/example-package-1 { };
   example-package-2 = pkgs.callPackage ./pkgs/example-package-2 { };
+  wlpinyin = pkgs.callPackage ./pkgs/wlpinyin { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
