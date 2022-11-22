@@ -26,11 +26,11 @@ stdenv.mkDerivation rec {
     owner = "xhebox";
     repo = "wlpinyin";
     # 对应的 commit 或者 tag，注意 fetchFromGitHub 不能跟随 branch！
-    rev = "b24aeb03f8c49958d5e733050524b5f55ad4876c";
+    rev = "7f2df900f6af76c9069764570626e85ba7c50203";
     # 下载 git submodules，绝大部分软件包没有这个
     fetchSubmodules = false;
     # 这里的 SHA256 校验码不会算怎么办？先注释掉，然后构建这个软件包，Nix 会报错，并提示你正确的校验码
-    sha256 = "sha256-Cwnw0ApBo2XgpFj5947iNG8Yu8yby00RRKH0wt9/qH4=";
+    sha256 = "sha256-jHnNYYMXBCgxXqy7HQzeWxleG3x0KcDv+RdM6eCBWcQ=";
   });
 
   # 并行编译，大幅加快打包速度，默认是启用的。对于极少数并行编译会失败的软件包，才需要禁用。
