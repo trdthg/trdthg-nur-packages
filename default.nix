@@ -15,6 +15,7 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   wlpinyin = pkgs.callPackage ./pkgs/wlpinyin { };
+  # feishu = pkgs.callPackage ./pkgs/feishu { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
