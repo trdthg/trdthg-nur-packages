@@ -37,7 +37,7 @@ stdenv.mkDerivation rec {
   enableParallelBuilding = true;
   # 如果基于 CMake 的软件包在打包时出现了奇怪的错误，可以尝试启用此选项
   # 此选项禁用了对 CMake 软件包的一些自动修正
-  dontFixCmake = true;
+  # dontFixCmake = true;
 
   # nativeBuildInputs 指定的是只有在构建时用到，运行时不会用到的软件包
   # 例如这里的用来生成 Makefile 的 meson, ninja
