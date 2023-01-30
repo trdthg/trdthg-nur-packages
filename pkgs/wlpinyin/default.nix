@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     rev = "7f2df900f6af76c9069764570626e85ba7c50203";
     # 下载 git submodules，绝大部分软件包没有这个
     fetchSubmodules = false;
-    # 这里的 SHA256 校验码不会算怎么办？先注释掉，然后构建这个软件包，Nix 会报错，并提示你正确的校验码
+    # 这里的 SHA256 校验码不会算怎么办？先注释掉， rff然后构建这个软件包，Nix 会报错，并提示你正确的校验码
     sha256 = "sha256-jHnNYYMXBCgxXqy7HQzeWxleG3x0KcDv+RdM6eCBWcQ=";
   });
 
@@ -42,6 +42,7 @@ stdenv.mkDerivation rec {
   # nativeBuildInputs 指定的是只有在构建时用到，运行时不会用到的软件包
   # 例如这里的用来生成 Makefile 的 meson, ninja
   nativeBuildInputs = [ meson ninja tree ];
+
 
   # buildInputs 指定的是运行时也会用到的软件包
   buildInputs = [
