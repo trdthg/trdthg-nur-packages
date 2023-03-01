@@ -19,14 +19,14 @@
 stdenv.mkDerivation rec {
   # 指定包名和版本
   pname = "wlpinyin";
-  version = "0.1.0";
+  version = "0.1.1";
 
   # 从 GitHub 下载源代码
   src = fetchFromGitHub ({
-    owner = "xhebox";
+    owner = "trdthg";
     repo = "wlpinyin";
     # 对应的 commit 或者 tag，注意 fetchFromGitHub 不能跟随 branch！
-    rev = "7f2df900f6af76c9069764570626e85ba7c50203";
+    rev = "fbfc948128060975d24ac64911460b58c391a352";
     # 下载 git submodules，绝大部分软件包没有这个
     fetchSubmodules = false;
     # 这里的 SHA256 校验码不会算怎么办？先注释掉， rff然后构建这个软件包，Nix 会报错，并提示你正确的校验码
